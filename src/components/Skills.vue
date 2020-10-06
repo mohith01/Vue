@@ -7,7 +7,7 @@
 
      
 
-      <div v-bind:class="alertObject"></div>
+      <div v-bind:style="{ backgroundColor: bgColor, width: bgWidth, height: bgHeight}"></div>
 
     </div>
   </div>
@@ -22,10 +22,9 @@ export default {
         {"skill":"Vue.js" },
         {"skill":"Baseball" },
       ],
-      showAlert:true,
-      alertObject:{ 
-        alert: true
-        },
+      bgColor: 'yellow',
+      bgWidth: '100%',
+      bgHeight: '30px',
     }
   }
 }
