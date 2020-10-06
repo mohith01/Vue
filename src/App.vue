@@ -9,12 +9,10 @@ import Skills from './components/Skills.vue'
 
 export default {
   name: 'App',
-  components:
-  { 
+  components: {
     Skills
     }
 }
-
 </script>
 
 <style >

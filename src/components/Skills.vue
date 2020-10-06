@@ -5,7 +5,10 @@
         <li v-for="(data, index) in skills" :key='index'>{{ index}}. {{data.skill}}</li>
       </ul>
 
-       <div vbind:class="alertObject"></div> 
+     
+
+      <div v-bind:class="alertObject"></div>
+
     </div>
   </div>
 </template>
@@ -17,10 +20,11 @@ export default {
     return {
       skills: [
         {"skill":"Vue.js" },
-        {"skill":"Baseball" }
+        {"skill":"Baseball" },
       ],
+      showAlert:true,
       alertObject:{ 
-        alert: true,
+        alert: true
         },
     }
   }
@@ -33,9 +37,6 @@ export default {
     background-color: chartreuse;
     width: 100%;
     height: 30px;
-  }
-  .another-class {
-    border: 5px solid black;
   }
 </style> 
 <!--We cant use interpolation in attributes of html 34 min timestamp -->
