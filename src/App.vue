@@ -14,6 +14,7 @@ export default {
     Skills
     }
 }
+
 </script>
 
 <style >
@@ -21,3 +22,4 @@ body{
   background-color: aliceblue;
 }
 </style>
+<!-- one commit-->
