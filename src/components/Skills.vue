@@ -5,14 +5,6 @@
         <li v-for="(data, index) in skills" :key='index'>{{ index}}. {{data.skill}}</li>
       </ul>
 
-      <p v-if="skills.length >= 1"> You have more than one skill</p>
-      <p v-else> You have less than one skill sed"</p>
-
-      <div v-bind:class="{ alert: showAlert, 'another-class':showClass}"></div>
-
-      
-       <br> 
-       <hr>
        <div vbind:class="alertObject"></div> 
     </div>
   </div>
@@ -25,12 +17,10 @@ export default {
     return {
       skills: [
         {"skill":"Vue.js" },
-        {"skill":"Baseball" },
+        {"skill":"Baseball" }
       ],
-      showAlert:true,
-      showClass:true,
       alertObject:{ 
-        alert: true
+        alert: true,
         },
     }
   }
